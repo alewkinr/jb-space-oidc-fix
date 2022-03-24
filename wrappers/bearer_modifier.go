@@ -1,4 +1,4 @@
-package proxy
+package wrappers
 
 import (
 	"fmt"
@@ -6,8 +6,8 @@ import (
 	"net/http"
 )
 
-// setBearerTokenFromQuery — устанавливаем Bearer токен из хеадера
-func setBearerTokenFromQuery(req *http.Request) {
+// SetBearerTokenFromQuery — устанавливаем Bearer токен из хеадера
+func SetBearerTokenFromQuery(req *http.Request) {
 	const (
 		accessTokenKey      = "access_token"
 		authorizationHeader = "Authorization"
