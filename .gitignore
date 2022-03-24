@@ -9,3 +9,4 @@ env.sh
 /k8s/base/secrets.yaml
 .env
 vendor
+bin
