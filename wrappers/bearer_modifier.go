@@ -2,8 +2,9 @@ package wrappers
 
 import (
 	"fmt"
-	log "github.com/sirupsen/logrus"
 	"net/http"
+
+	log "github.com/sirupsen/logrus"
 )
 
 // SetBearerTokenFromQuery — устанавливаем Bearer токен из хеадера

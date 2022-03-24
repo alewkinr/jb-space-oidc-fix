@@ -2,12 +2,13 @@ package main
 
 import (
 	"fmt"
-	"github.com/alewkinr/jb-space-oidc-fix/config"
-	"github.com/alewkinr/jb-space-oidc-fix/wrappers"
-	log "github.com/sirupsen/logrus"
 	"net/http"
 	"net/http/httputil"
 	"net/url"
+
+	"github.com/alewkinr/jb-space-oidc-fix/config"
+	"github.com/alewkinr/jb-space-oidc-fix/wrappers"
+	log "github.com/sirupsen/logrus"
 )
 
 func main() {
