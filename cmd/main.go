@@ -64,6 +64,8 @@ func (h *UserInfoHandler) ServeHTTP(rw http.ResponseWriter, req *http.Request) {
 		return
 	}
 
+	log.Info(log.Fields{"isso response": string(respBody)})
+
 	rw.WriteHeader(res.StatusCode)
 	_, writeResponseBodyErr := rw.Write(respBody)
 	if writeResponseBodyErr != nil {
