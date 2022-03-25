@@ -6,9 +6,10 @@ import (
 
 // Config описывает структуру конфига
 type Config struct {
-	ServerHost   string `envconfig:"SERVER_HOST"`
-	ServerPort   string `envconfig:"SERVER_PORT"`
-	ProviderHost string `envconfig:"PROVIDER_HOST"`
+	ServerHost      string `envconfig:"SERVER_HOST"`
+	ServerPort      string `envconfig:"SERVER_PORT"`
+	ProviderHost    string `envconfig:"PROVIDER_HOST"`
+	IssoUserInfoURI string `envconfig:"USERINFO_URI"`
 }
 
 // InitConfig возвращает конфиг
