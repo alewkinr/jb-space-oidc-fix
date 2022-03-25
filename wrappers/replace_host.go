@@ -11,7 +11,7 @@ func MakeRequest(targetHost string, req *http.Request) (*http.Request, error) {
 		return nil, makeRequestErr
 	}
 
-	setTokenInHeaderErr := SetBearerTokenFromQuery(targetHost, outreq)
+	setTokenInHeaderErr := SetBearerTokenFromQuery(req, outreq)
 	if setTokenInHeaderErr != nil {
 		return nil, setTokenInHeaderErr
 	}
