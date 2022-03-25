@@ -35,6 +35,8 @@ func NewUserInfoHandler(cfg *config.Config) *UserInfoHandler {
 }
 
 func (h *UserInfoHandler) ServeHTTP(rw http.ResponseWriter, req *http.Request) {
+	log.WithFields(log.Fields{"inc request": req}).Info("got new request")
+
 	outreq, makeRequestErr := wrappers.MakeRequest(h.issoUserInfoURL, req)
 	if makeRequestErr != nil {
 		log.Errorf("make request: %v", makeRequestErr)
